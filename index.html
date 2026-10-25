@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maktabga birga</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="phone">
+    <header class="topbar">
+      <button class="icon-btn">☰</button>
+      <img class="logo-img" src="images/logo.png" alt="MAKTABGA BIRGA logotipi">
+      <button class="icon-btn">🔔</button>
+    </header>
+
+    <main>
+      <section class="screen active" id="home">
+        <div class="active-chip" id="active-chip"></div>
+
+        <div class="banner">
+          <div class="banner-text">
+            <h2>Xush kelibsiz,<br><span>aziz opa!</span></h2>
+            <p>“Bugun farzandingiz kelajagi uchun birga qadam tashlaymiz!”</p>
+            <button class="banner-btn" data-go="tasks">Davom etish →</button>
+          </div>
+          <div class="banner-art">👩‍👧</div>
+        </div>
+
+        <div class="grid">
+          <button class="card" style="--c:#fbefd2" data-go="tasks"><span class="ico">📝</span>Uyga vazifalarim</button>
+          <button class="card" style="--c:#fbe0e6" data-go="child-psy"><span class="ico">👶</span>Bola psixologiyasi</button>
+          <button class="card" style="--c:#f7dcef" data-go="women-psy"><span class="ico">👩</span>Ayollar psixologiyasi</button>
+          <button class="card" style="--c:#e6dcfa" data-go="podcast"><span class="ico">🎙️</span>Podcast</button>
+          <button class="card" style="--c:#d9f2e3" data-go="javonim"><span class="ico">📚</span>Javonim</button>
+          <button class="card" style="--c:#d7e9fb" data-go="dictionary"><span class="ico">🌍</span>Lug'atim</button>
+          <button class="card" style="--c:#fbefd2" data-go="quiz"><span class="ico">🧩</span>Bilimni mustahkamla</button>
+          <button class="card" style="--c:#fde3d1" data-go="support"><span class="ico">🏆</span>Iqtidorni qo'llab-quvvatlash</button>
+          <button class="card" style="--c:#d6ecfd" data-go="ranking"><span class="ico">📊</span>Sinf reytingi</button>
+        </div>
+      </section>
+
+      <section class="screen" id="dictionary">
+        <h2 class="page-title">🌍 Lug'atim</h2>
+
+        <div class="lang-tabs">
+          <button class="lang active" data-lang="en">Ingliz</button>
+          <button class="lang" data-lang="ru">Rus</button>
+          <button class="lang" data-lang="fr">Fransuz</button>
+          <button class="lang" data-lang="de">Nemis</button>
+        </div>
+
+        <div class="grade-tabs">
+          <button class="grade active" data-grade="1">1-sinf</button>
+          <button class="grade" data-grade="2">2-sinf</button>
+          <button class="grade" data-grade="3">3-sinf</button>
+          <button class="grade" data-grade="4">4-sinf</button>
+        </div>
+
+        <ul id="word-list"></ul>
+      </section>
+
+      <section class="screen" id="tasks"></section>
+      <section class="screen" id="javonim"></section>
+      <section class="screen" id="podcast"></section>
+      <section class="screen" id="quiz"></section>
+      <section class="screen" id="ranking"></section>
+      <section class="screen" id="profile"></section>
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="nav-btn active" data-go="home"><span>🏠</span>Bosh sahifa</button>
+      <button class="nav-btn" data-go="class"><span>👥</span>Mening sinfim</button>
+      <button class="nav-btn" data-go="awards"><span>🏆</span>Yutuqlar</button>
+      <button class="nav-btn" data-go="profile"><span>👤</span>Profil</button>
+    </nav>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
